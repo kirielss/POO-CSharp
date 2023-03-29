@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            double[,] mat = new double[2, 3];
+
+            Console.WriteLine(mat.Length);
+            Console.WriteLine(mat.Rank);
+            Console.WriteLine(mat.GetLength(1));
+
         }
     }
 }
