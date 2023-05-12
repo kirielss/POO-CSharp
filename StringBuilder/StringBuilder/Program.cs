@@ -28,8 +28,17 @@ namespace StringBuilder
             p2.AddComment(c4);
 
             Console.WriteLine(p1);
+            foreach (Comment comment in p1.Comments)
+            {
+                Console.WriteLine(comment);
+            }
             Console.WriteLine();
+
             Console.WriteLine(p2);
+            foreach (Comment comment in p2.Comments)
+            {
+                Console.WriteLine(comment);
+            }
         }
     }
 }

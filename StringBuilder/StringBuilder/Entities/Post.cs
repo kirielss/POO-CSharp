@@ -27,17 +27,9 @@
             Comments.Remove(comment);
         }
 
-        public void ShowComments(List<Comment> comments)
-        {
-            foreach (Comment comment in Comments)
-            {
-                Console.WriteLine(comment);
-                Console.WriteLine();
-            }
-        }
         public override string ToString()
         {
-            return Title + Environment.NewLine + Likes + " Likes - " + Moment + Environment.NewLine + Content + Environment.NewLine + "Comments:" + Environment.NewLine ShowComments(Comments);
+            return Title + Environment.NewLine + Likes + " Likes - " + Moment + Environment.NewLine + Content + Environment.NewLine + "Comments:";
         }
     }
 }
